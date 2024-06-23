@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    .form-control:focus,  
+.form-check-input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #ced4da; /* Optional: This sets the border color to the default gray */
+}
+
+  </style>
+</head>
+<body>
+  <%- include("partials/header",{currentPage: 'contact' })%>
+  <div class="container mt-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0  rounded overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h1 class="mb-0">Career Counselling</h1>
+            <form id="contact-form">
+              <div class="col-sm-8 col-md-12 col-lg-8 mt-4">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required name="firstname">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-sm-8 col-md-12 col-lg-8 mt-3">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required name="lname">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+              <div class="col-sm-8 col-md-12 col-lg-8 mt-3">
+                <input type="email" class="form-control" id="email" placeholder="Email" required name="email">
+                <div class="invalid-feedback">
+                  Valid Email is required.
+                </div>
+              </div>
+              <div class="col-sm-8 col-md-12 col-lg-8 mt-3">
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" required name="phone">
+                <div class="invalid-feedback">
+                  Valid Phone Number is required.
+                </div>
+              </div>
+              <div class="col-sm-8 col-md-12 col-lg-8 mt-3">
+                <textarea class="form-control" placeholder="Message" id="message" required></textarea>
+                <div class="invalid-feedback">
+                  Valid Message is required.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-md mt-3">Submit</button>
+            </form>
+            
+            
+          </div>
+          <div class="col-auto d-none d-lg-block">
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            
+            <h1  class="mb-0">Have Questions?</h1>
+            <h6 class="mt-4 fs-4">Call us at!</h6>
+            <p class="mb-auto fs-5 text-primary">+91 82871 78151</p>
+            <h6 class="mt-4 fs-4">Send us mail</h6>
+            <p class="mb-auto fs-5"><a href="mailto:rohtak@maacgmail.com">rohtak@maacmail.com</a></p>
+            <h6 class="mt-4 fs-4">Find Us</h6>
+            <p class="mb-auto fs-5 text-primary">75R, Part B, 3rd floor, Opposite CR Polytechnic, Powerhouse, Haryana 124001</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27946.69066812853!2d76.614442!3d28.888352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d85df2062be4f%3A0x1ac04eca3f86797!2sDhouchak%20Complex!5e0!3m2!1sen!2sus!4v1718050413093!5m2!1sen!2sus" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container mb-5">
+      <h1 class="text-center mt-4">Frequently Asked Questions?</h1>
+      <p class="text-center">Most frequently asked questions and answers</p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              
+        Why Advanced Tech Labs is Best place for you?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             Don't take our word, Republic TV Top Animation Institutes Ranking Suggests MAAC As The Top Choice For Animation Institute. Republic TV Top 10 Animation Academy Rankings.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What salary does a graphic and web designer gets?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              We get this question regularly and to sum this up a student get placed as a fresher at Junior level where he can get somewhere from 15,000 to 40,000 to start with as the experience and level rises the salary jumps too.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What is the fee stucture of the courses?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Don't worry, there is a course for every budget. Here the fee ranges from 50,000 to 2,50,000 for Short, Mid to Long Term Courses. A student can earn back his fee in less than a year with our hyperactive placement support.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("partials/whatsapp") %>
+  <%- include("partials/footer",{currentPage:'contact'}) %>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/contact.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+.imagesection{
+  background-image: url("/images/background.png");
+   background-repeat: no-repeat;
+  height: 88vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+
+}
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px; /* adjust as necessary */
+}
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+}
+.marquee-content img {
+  width: 150px;
+  height: 100px;
+  margin-right: 10px; /* adjust as necessary */
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+/* #testimonials :hover{
+  color: red;
+  border-bottom: 1px solid red;
+} */
+.form{
+  width: 630px;
+  height: 630px;
+  /* border: 1px solid red; */
+margin-top: 20px;
+  background-color: rgba(36, 22, 22, 0.5);
+  margin-left: 10%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.form input{
+  width: 470px;
+  height: 50px;
+  margin-top: 10px;
+  text-indent: 20px;
+  font-size: 18px;
+}
+.form select{
+  width: 470px;
+  height: 40px;
+  text-indent:20px ;
+  font-size: 18px;
+}
+.form select option{
+  height: 40px;
+}
+.form button{
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+.form button:hover{
+  background-color: rgb(82, 82, 235);
+}
+.custom-input ,.custom-select{
+  border: none; 
+  padding: 8px;
+}
+
+.custom-input:focus,.custom-select:focus{
+  outline: none; 
+  border-color: transparent;  
+}
+/* .content img{
+  width: 120px;
+  height: 40px;
+} */
+.custom-dropdown-button {
+  border: 2px solid blue; 
+  border-radius: 5px; /* Rounded corners */
+}
+
+.custom-dropdown-button:hover {
+  background-color: lightblue; /* Background color on hover */
+}
+.exploresection p>a{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  }
+  .exploresection p>a:hover{
+  color: blue;
+  }
+ 
+  .carousel-item img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+ 
+  
+  .carousel-item {
+    height: 70vh;
+    display: flex;
+    align-items:justify;
+    text-align: justify;
+    flex-direction: column;
+  }
+  .carousel-item img {
+    max-width: 150px; 
+    max-height: 150px; 
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  } 
+  
+  .contain{
+    gap: 10px;
+  }
+  .box img{
+      height: 98px;   
+      }
+  .box p{
+          margin-top: 2em;
+          margin-left: 2rem;
+          font-size: 18px;
+      }
+  .box p:hover{
+  text-decoration: underline;
+  }
+  .counter{
+    font-family: "Playwrite IS", cursive;
+  }
+ 
+  #image-box img{
+    width: 500px;
+    height:500px;
+    border-radius: 40px;
+   
+  }
+ .media img{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+ }.content{
+  margin: auto;
+  border: 1px solid green;
+}
+
+
+  
+.card:hover{
+    box-shadow: 0px 0px 40px rgb(198, 198, 198);
+    transition: ease-out .3s all ;
+    transform: scale(1.04);
+    
+}
+.counter{
+  background-color: #000;
+  padding: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.para{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  }
+  .para1{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+  }
+  .containerbox{
+    text-align: center;
+  }
+
+  .containerbox .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .video-container{
+    overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  }
+  .video-container video{
+    width: 200px;
+    width: 200px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.7);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  /* .containerbox .video-container .video:hover video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+  } */
+  @media (min-width:300px) and (max-width:750px){
+    .form{
+      width: 100%;
+      height: 630px;
+      /* border: 1px solid red; */
+    margin-top: 20px;
+      background-color: rgba(36, 22, 22, 0.5);
+      margin-left: 0;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid white;
+      
+      
+    }
+    .form input{
+      width: 90%;
+      height: 40px;
+    }
+    .form select{
+      width: 90%;
+    }
+    .explore{
+      visibility: hidden;
+    }
+    .imagesection{
+      width: 100%;     
+          
+    }
+    /* .courses{
+      margin-bottom: 2px;
+    } */
+    .counter{
+  
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;  
+      
+      }
+      .para{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+       
+        }
+        .media img{
+          margin-left: 2px;
+          padding: 10px;
+        
+          width: 100%;
+        }
+        .sectionimage{
+          width: 380px;
+          margin-left: 0;
+        }
+        .carousel-item {
+          height: auto; /* Adjust height for smaller screens */
+          padding: 20px 0;
+        }
+  
+  }
+ 
+  @media (min-width:751px) and (max-width:1100px){
+    .form{
+      width: 100%;
+      height: 650px;
+      /* border: 1px solid red; */
+    margin-top: 20px;
+      background-color: rgba(36, 22, 22, 0.5);
+      margin-left: 0;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid white;
+      
+      
+    }
+    .form input{
+      width: 80%;
+      height: 40px;
+    }
+    .form select{
+      width: 80%;
+    }
+    .explore{
+      visibility: hidden;
+    }
+    .imagesection{
+      width: 50%;     
+          
+    }
+  }
+ 

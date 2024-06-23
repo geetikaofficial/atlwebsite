@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="shortcut icon" href="images/atl.png" type="image/x-icon">
+</head>
+<body>
+  <%- include("partials/header",{ currentPage: 'about' }) %>
+  <section class="py-3 py-md-5">
+    <div class="container d-md-flex d-lg-flex">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/carousal1.jpeg" class="d-block w-100 rounded-5" alt="About 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousal2.jpeg" class="d-block w-100 rounded-5" alt="About 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousal3.jpeg" class="d-block w-100 rounded-5" alt="About 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-7">
+          <div class="row justify-content-xl-center ">
+            <div class="col-12 col-xl-11" style="text-align: justify;">
+              <h2 class="mb-1 mt-4">Who Are We?</h2>
+              <hr style="width: 100px;" color="blue" >
+              <p class="lead fs-5 text-black mb-1 mt-4">Welcome to Advanced Tech Labs, India’s premier training institute for cutting-edge 3D Animation and Visual Effects. Established in 2001 as a flagship brand of ATL, Advanced Tech Labs has emerged as a beacon of excellence, shaping the careers of countless students across the globe.</p>
+              <p class="mb-1 fs-5">
+                Our journey spans over two decades, during which we have empowered hundreds of thousands of individuals with the skills and knowledge needed to thrive in the dynamic world of media and entertainment. we are committed to making quality education accessible to all aspiring artists and creators.</p>
+                <p class="mb-1 fs-5">At Advanced Tech Labs, we offer a comprehensive range of career courses covering 3D Animation, Visual Effects, Gaming, Multimedia, Filmmaking, Broadcast, VR & AR. Each course is meticulously crafted to provide students with in-depth insights into industry dynamics, preparing them for real-world challenges.</p>
+                <p class="mb-1 fs-5">What sets us apart is our unwavering commitment to excellence. We provide a conducive learning environment equipped with world-class infrastructure and the latest technical tools. Our faculty comprises industry veterans who bring invaluable expertise and insights to the classroom, ensuring that every student receives personalized attention and guidance.</p>
+                
+                <p class="mb-1 fs-5">Whether you aspire to be a visual effects artist, a game developer, or a multimedia specialist, Advanced Tech Labs is your gateway to a rewarding career in the media and entertainment industry. Join us and embark on a transformative journey towards realizing your dreams.</p>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+  <%- include("partials/whatsapp") %>
+  <%- include("partials/footer",{currentPage:'about'}) %>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maac Rohtak| ATL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  
+ <link rel="stylesheet" href="css/styles.css">
+</head>
+<body  onload="load()">
+  <%- include("partials/header", { currentPage: 'home' })%>
+  <div class="container-fluid imagesection">
+    <div class="row">
+        <div class=" col-lg-12" >
+          <div class="form col col-lg-4 col-md-12 col-sm-8">
+<form  class=".form" id="registration-form" action="/submit" method="post" onsubmit="sendEmail(); reset(); return false;">
+  <h1 class="text-light">BEGIN YOUR CAREER IN GAMING, 3D ANIMATION, VFX & MULTIMEDIA</h1>
+  <h5 class="text-light">REGISTER FOR A FREE DEMO CLASS!</h5>
+  <input type="text" placeholder="Full Name" id="full-name" class="custom-input" required><br>
+  <input type="email" name="" id="email-address" placeholder="Email Address" class="custom-input" required><br>
+  <input type="number" placeholder="Phone Number" class="custom-input"  id="phone-number" required><br><br>
+  <p class="fs-5 text-light">I'M A</p>
+  <Select  id="role" required class="custom-select">
+    <option value="1">Student</option>
+    <option value="2">Parent</option>
+  </Select><br><br>
+  <button>SUBMIT</button>
+</form>
+          </div>
+          </div>
+        </div>    
+      </div>           
+ <div class="container-fluid company_names text-black text-center bg-light p-md-3 p-lg-4 pt-3">
+  <p class="fs-2 text-primary mb-5"><b>We collaborate with  leading companies</b></p>
+  <div class="marquee-container">
+    <div class="marquee-content" id="marquee-content">
+        <img src="images/adobe.png" alt="Adobe">
+        <img src="images/amazon.png" alt="Amazon">
+        <img src="images/cisco.png" alt="Cisco">
+        <img src="images/google.png" alt="Google">
+        <img src="images/ibm.png" alt="IBM">
+        <img src="images/meta.png" alt="Meta">
+        <img src="images/samsung.png" alt="Samsung">
+        <img src="images/microsoftlogo.png" alt="Microsoft">
+        <img src="images/wipro.png" alt="Wipro">
+        <!-- Repeat the images to make the scrolling continuous -->
+       
+    </div>
+</div>  
+</div>
+
+<div class="content mt-5" style="border: none;">
+  <h3 class="text-center text-primary fs-2 mt-3 mb-5"><b>The ideal stepping stone for Success</b></h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow p-2">
+          <img class="card-img-top" src="https://d3nn873nee648n.cloudfront.net/900x600/19622/220-SM948727.jpg" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100x225]" style="height: 210px; width: 100%; display: block;"  data-holder-rendered="true">
+          <div class="card-body">
+            <p class="card-text fw-bold fs-4"><a href="/contact" class="text-dark" style="text-decoration: none;">Book a Free Career Counselling Demo</a></p>
+            <p class="text-black">Visit our Learning Facility and Allow us to guide you!</p>
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 ">
+        <div class="card mb-4 box-shadow p-2">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvNlCq3tnTzrZdeMkKhBWvuhkxmXwZK7IPg&s" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100x225]" style="height: 210px; width: 100%; display: block;"  data-holder-rendered="true">
+          <div class="card-body">
+            <p class="card-text fw-bold text-black fs-4">
+              Enroll in the course of your choice</p>
+            <p class="text-black">MAAC courses prepare you for exciting career options!
+
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow p-2">
+          <img class="card-img-top" src="https://d3nn873nee648n.cloudfront.net/900x600/6208/20-SM154541.jpg" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100x225]" style="height: 210px; width: 100%; display: block;"  data-holder-rendered="true">
+          <div class="card-body">
+            <p class="card-text fw-bold fs-4 text-black">
+              Work on industry projects and start earning</p>
+            <p class="text-black">Be a part of the fastest growing media & entertainment industry​.</p>
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+</div>
+<!-- header,nav,options are done -->
+<div class="container exploresection mt-5 " >
+  <h3 class="text-center fs-2 mt-3 mb-5 text-primary "><b>Explore Courses</b></h3>
+  <div class="row">
+    <div class="col-md-4 col-sm-12 col-lg-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://d3nn873nee648n.cloudfront.net/900x600/20487/300-PT1049064.jpg" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course1" target="_blank">3D Animation</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course5">Programming</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://images.unsplash.com/photo-1602110531677-21697e428a25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmZ4fGVufDB8fDB8fHww" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course3">Visual Effects</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://d3nn873nee648n.cloudfront.net/900x600/19146/300-SM931556.jpg" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course4">Game Designing</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://maacrohtak.com/wp-content/uploads/2021/08/multimedia-and-design-1.jpg" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course2">Multimedia & Design</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="col-md-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://maacrohtak.com/wp-content/uploads/2021/08/course-img-105-1.jpg" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course6">Augmented & Virtual Reality</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://maacrohtak.com/wp-content/uploads/2021/09/course-img-101.jpg" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course7">Broadcast</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-3 box-shadow ">
+        <div class="card-body d-flex">
+          <img src="https://maacrohtak.com/wp-content/uploads/2021/09/course-img-35.jpg" alt="" class="w-25 h-35 m-0 p-0" >
+          <p class="text-black mt-4 mx-3"><a href="/course8">Short Term Courses</a></p>
+          <div class="d-flex justify-content-between align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <!-- explore section done -->
+   
+  <!-- section1 -->
+  <section class="counter bg-primary text-white mt-5 mb-5 p-0" >
+    <h1 class="fw-bold fs-3 text-center">Your Dream Job is One call away <span><img src="images/atl.png" alt="" width="100rem" style="margin-left: 300px;"></span></h1>
+ </section>
+ <!-- section2 -->
+  <section class="bg-light">
+    <div class="container mt-5 ">
+        <div class="row featurette">
+            <div class="col-md-12 col-sm-12 col-lg-5 mb-3 mt-3">
+                <img src="https://maacrohtak.com/wp-content/uploads/2022/05/uriel-soberanes-MxVkWPiJALs-unsplash-scaled-e1652094961317.jpg" class="rounded-2 sectionimage" alt="" width="400px">
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-7 d-flex align-items-center">
+                <div>
+                    <h2 class="featurette-heading fw-bold lh-2">Take the next step towards your personal and professional goals with ATL.</h2>
+                    <p class="lead">Join now to receive personalized recommendations from the <br> full ATL catalog.</p>
+                    <button class="btn btn-primary btn-lg"><a href="/contact" class="text-light" style="text-decoration: none;">Book a free Consulation </a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+
+  <!-- Carousel View for Mobile --> 
+  <div id="testimonialCarousel" class="carousel slide d-md-none mt-5 mb-5" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active card">
+        <div class="text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmi0EFNoShozBz0DpLk1suCspaTMAVvsb8w&s" class="rounded-circle shadow-1-strong" width="100" height="100" />
+          <h5 class="font-weight-bold mt-3">Mansi Nirmal</h5>
+          <h6 class="font-weight-bold my-3">PLACEMENT: ANIBRAIN JOB: VFX ARTIST</h6>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star-half-alt fa-sm text-info"></i></li>
+          </ul>
+          <p class="mb-2"><i class="fas fa-quote-left pe-2"></i>"ATL a place where I learnt a lot, not only about animation, but also how a team works, patience, & how to handle technical problems. It also provided me a path to a successful career. Thanks to ATL."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="text-center card p-2">
+          <img src="https://maacrohtak.com/wp-content/uploads/2022/05/maac-hero-Viplav-Bajpai.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" />
+          <h5 class="font-weight-bold mt-3">Viplav Bajpai</h5>
+          <h6 class="font-weight-bold my-3">3D ARTIST AT IPE GLOBAL LTD</h6>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+          </ul>
+          <p class="mb-2"><i class="fas fa-quote-left pe-2"></i>"I am currently working as a 3D Artist in IPE Global Ltd. ATL has really helped me a lot to reach this position. The faculty at ATL has also helped me a lot during the course to work on projects like making films, videos, animation, etc. I am now able to implement those learnings into practical works while working as a 3D artist myself."</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="text-center card p-2">
+          <img src="https://maacrohtak.com/wp-content/uploads/2022/05/sandeep-singha-big.jpg" class="rounded-circle shadow-1-strong" width="100" height="100" />
+          <h5 class="font-weight-bold mt-3">Sandeep Singh</h5>
+          <h6 class="font-weight-bold my-3">PLACEMENT: VIGYAAPAN TECHNOLOGIES (P) LTD. JOB: MODELLING, TEXTURING & LIGHTING ARTIST</h6>
+          <ul class="list-unstyled d-flex justify-content-center">
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="fas fa-star fa-sm text-info"></i></li>
+            <li><i class="far fa-star fa-sm text-info"></i></li>
+          </ul>
+          <p class="mb-2"><i class="fas fa-quote-left pe-2"></i>"ATL has helped me by providing software training, expert seminars, chance to work on short films like the 24 FPS movie & career development training. Thanks for guiding my career in the right path."</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div> 
+
+  <!-- Grid View for Desktop -->
+  <div class="row mt-5 mb-5 d-none d-lg-flex container" style="gap: 40px; margin: auto;"  id="contacts-header">
+    <div class=" text-center card p-3 " style="width: 400px;">
+      <center>
+      <img src="https://maacrohtak.com/wp-content/uploads/2022/05/mansi-nirmal-big.jpg" style="border-radius: 50%; border: 2px solid black; width: 120px;" alt="">
+      <h4 class="fw-normal mt-3">Mansi Nirmal</h4>
+      <p>PLACEMENT: ANIBRAIN JOB: VFX ARTIST</p>
+      <hr class="custom-hr">
+      <p class="mt-5">"ATL is a place where I learnt a lot, not only about animation, but also how a team works, patience, & how to handle technical problems. It also provided me a path to a successful career. Thanks to ATL."</p>
+    </div><!-- /.col-lg-4 -->
+  </center>
+  
+    
+    <div class=" text-center card p-3 " style="width: 400px;">
+      <center>
+      <img src="https://maacrohtak.com/wp-content/uploads/2022/05/maac-hero-Viplav-Bajpai.jpg" style="border-radius: 50%; border: 2px solid black; width: 120px;" alt="">
+      <h4 class="fw-normal mt-3">Viplav Bajpai</h4>
+      <p>3D ARTIST AT IPE GLOBAL LTD</p>
+      <hr class="custom-hr">
+      <p class="mt-5">"I am currently working as a 3D Artist in IPE Global Ltd. ATL has really helped me a lot to reach this position. The faculty at ATL has also helped me a lot during the course to work on projects like making films, videos, animation, etc. I am now able to implement those learnings into practical works while working as a 3D artist myself."</p>
+    </center>
+    </div><!-- /.col-lg-4 -->
+   
+    <div class="text-center card_section card p-3  " style="width: 400px;">
+      <center>
+      <img src="https://maacrohtak.com/wp-content/uploads/2022/05/sandeep-singha-big.jpg" style="border-radius: 50%; border: 2px solid black; width: 120px;" alt="" class="shadow">
+      <h4 class="fw-normal mt-3">Sandeep Singh</h4>
+      <p>PLACEMENT: VIGYAAPAN TECHNOLOGIES (P) LTD. JOB: MODELLING, TEXTURING & LIGHTING ARTIST</p>
+      <hr class="custom-hr">
+      <p class="mt-4">"ATL has helped me by providing software training, expert seminars, chance to work on short films like the 24 FPS movie & career development training. Thanks for guiding my career in the right path."</p>
+    </div><!-- /.col-lg-4 -->
+  </center>
+  </div>
+  </div>
+</div>
+</div>
+
+<section class="counter bg-primary text-white mt-5 mb-5" >
+       <div class="row" >
+        <div class="col-sm">
+           <p id='0101' class="para" class="fs-3 text-light">15,000<sup>+</sup></p>
+           <p class="text-light para1">Students</p>
+        </div>
+        <div class="col-sm">
+           <p class="para" class="fs-3 text-light"><span id='0102'>100</span>%</p>
+           <p class="text-light para1">Placement Assistant</p>
+     </div>
+     <div class="col-sm">
+        <p class="para" ><span id='0103'>40,000<sup>+</sup></span></p>
+        <p class="text-light align-content-center para1">Average Salaries</p>
+     </div>
+     <div class="col-sm">
+      <p class="para"><span id='0104'>30<sup>+</sup></span></p>
+      <p class="text-light align-content-center para1">Courses</p>
+   </div>
+  </div>
+</div>
+</section>
+<section class="bg-light p-3">
+  <div class="container">
+      <div class="row featurette">
+          <div class="col-md-12 col-sm-12 col-lg-5 mb-5">
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/front-page-rebrand/secondary-consumer-cta/Image-Next-Step.png?auto=format%2Ccompress&dpr=1&w=471&h=330&q=40" class="rounded-2 sectionimage" alt="" width="400px">
+          </div>
+          <div class="col-md-12 d-flex col-sm-12 col-lg-7 align-items-center pt-3">
+              <div>
+                  <h2 class="featurette-heading fw-bold lh-2">Best in class learning for you</h2>
+                  <p class="lead">Pursue a promotion, a raise, or switch careers. <br>89% of learners who have taken a course report career benefits.</p>
+                  <button class="btn btn-primary btn-lg"><a href="/contact" class="text-light " style="text-decoration: none;">Book a Free Consulation</a></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Carousel wrapper -->
+  <div class="containerbox mt-3">
+    <h3 class="fs-3 fw-bold">Gallery</h3>
+      
+    <div class="video-container">
+      <div class="video">
+        <video src="videos/video1.mp4" muted controls autoplay></video>
+      </div>
+      <div class="video">
+        <video src="videos/video2.mp4" muted controls></video>
+      </div>
+      
+      <div class="video">
+        <video src="videos/video3.mp4" muted controls></video>
+      </div>
+      <div class="video">
+        <video src="videos/video4.mp4" muted controls></video>
+      </div>
+      <div class="video">
+        <video src="videos/video5.mp4" muted controls></video>
+      </div>
+     
+    </div>
+  </div>
+  <section class="counter bg-primary text-white mt-5 mb-5" >
+   <h1 class="fw-bold fs-1 text-center">#get Trained #get Hired</h1>
+</section>
+  <div class="container mt-4">
+    <div class="row featurette">
+      <div class="col-lg-1"></div>
+      <div class="col-md-12 d-flex col-sm-12 col-lg-6 align-items-center">
+        <div>
+            <h2 class="featurette-heading fw-bold lh-2">The ideal solution for your Career </h2>
+            <p class="lead">Get the world-class learning and development chosen by most students. </p>
+            <button class="btn btn-primary btn-lg mb-3"><a href="/contact" class="text-light" style="text-decoration: none;">Book a free Consulation</a></button>
+        </div>
+    </div>
+        <div class="col-md-12 col-sm-12 col-lg-5">
+          <img src="images/companies.png" class="rounded-2 sectionimage" alt="" width="600px">
+        </div>
+       
+    </div>
+</div>
+
+  </div>
+  <div class=" g-lg-5 py-5 d-md-flex start container " style="gap:20px">
+    <div class="col-lg-4 col-md-4 col-sm-12 card p-3 text-lg-start mb-3 shadow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+      </svg>
+      <h5 class="card-title mt-4 fs-3">Call for us !</h5>
+      <p class="fs-2 text-primary">+91 82871 78151</p>
+      <p class="card-text fs-5">Please call us and we would be happy to answer all your queries. </p>
+      <h5 class="fs-3">Visit us !</h5>
+       <p class="fs-5"> 75R, Part B, 3rd floor, Opposite CR Polytechnic, Powerhouse, Haryana 124001</p>
+      
+    </div>
+    <div class="col-md-4 card mx-auto col-lg-4 col-sm-12 p-3 mb-3 shadow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"/>
+        <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"/>
+      </svg>
+      <h5 class="card-title mt-4 fs-3">Opening Times</h5>
+      <p class="card-text">
+        <p class="fs-5">Monday 10am -7pm</p>
+        <p class="fs-5">Tuesday 10am -7pm</p>
+        <p class="fs-5">Wednesday 10am -7pm</p>
+        <p class="fs-5">Thursday 10am -7pm</p>
+        <p class="fs-5">Friday 10am -7pm</p>
+        <p class="fs-5">Saturday 10am -7pm</p>
+        <p class="fs-5 text-danger">Sunday closed</p>
+      </p>
+    </div>
+    <div class="col-md-4 card mx-auto col-lg-4 col-sm-12  p-3 mb-3 shadow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>
+      <h5 class="card-title mt-4 fs-3 ">Have Questions?</h5>
+      <form  id="registration-form">
+        <div class="form-floating mb-2">
+          <input type="text" class="form-control" id="full-name" placeholder="Full name" required>
+          <label for="full-name">Full name</label>
+        </div>
+        <div class="form-floating mb-2">
+          <input type="email" class="form-control" id="email-address" placeholder="name@example.com" required>
+          <label for="email-address">Email address</label>
+        </div>
+        <div class="form-floating mb-2">
+          <input type="number" class="form-control" id="phone-number" placeholder="Phone number" required>
+          <label for="phone-number">Phone number</label>
+        </div>
+        <div class="form-floating mb-2">
+          <select class="form-select" id="role" required>
+            <option value="" selected disabled hidden></option>
+            <option value="1">Student</option>
+            <option value="2">Parent</option>
+          </select>
+          <label for="role">I'm a</label>
+        </div>
+        <button class="w-50 btn btn-primary" type="submit">Sign up</button>
+      </form>
+      
+    </div>
+  </div>
+  <%- include("partials/whatsapp") %>
+  <%- include("partials/footer",{currentPage:'home'}) %>
+
+<script src="/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

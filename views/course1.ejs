@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course1</title>
+</head>
+<body>
+    <%- include("partials/header", { currentPage: 'course1' })%>
+
+<div class="container my-2 " >
+    <div class="bg-body-tertiary p-5  rounded">
+      <div class="content-card d-lg-flex">
+        <div class="col-sm-8 py-5 pt-0">
+          <h1 class="fw-normal"><%=course.id %></h1>
+          <p>The world of animation is exciting and challenging</p>
+          <p style="font-size: 18px;">
+            <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button" aria-disabled="true">Average Salary</a>
+            <a>₹3,90,131 / year</a>
+            <hr>
+          </p>
+          <p> Get ready to grab the most in-demand jobs in the animation industry on completing our 3D Animation courses. Join a program that suits you best: <br>
+          <ul>
+            <li>Advanced program in 3D Animation</li>
+            <li>3D Animation Filmmaking course</li>
+            <li>Animation and Filmmaking course</li>
+          </ul>
+
+          <p>On successfully completing a course in 3D Animation, you can get to work as a:</p>
+          <ul>
+            <li>Modeling artist</li>
+            <li>Character animator</li>
+            <li>FX artist</li>
+            <li>Compositor</li>
+            <li>Lighting artist</li>
+            <li>Render artist</li>
+            <li>Video editor</li>
+          </ul>
+          <p>
+          <a class="btn btn-primary" href="contact.html" role="button">Get in touch »</a>
+        </div>
+
+        <div class="card mx-md-5" style="width: 20rem; height: 24rem;">
+          <img class="card-img-top" src="https://maacrohtak.com/wp-content/uploads/2021/08/3d-animation-2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-primary fs-4">3D Animation</h5>
+            <p class="card-text">Skills you'll gain: Modeling artist, Character animator, FX artist, Compositor, Lighting artist, Render artist</p>
+            <a href="#" class="text-dark " style="text-decoration: none; " >4.8 <i class="fa-solid fa-star" style="color: orange;"></i> Reviews</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<%- include("partials/header", { currentPage: 'course1' })%>
+</body>
+</html>

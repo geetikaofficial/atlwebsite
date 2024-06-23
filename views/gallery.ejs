@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Center </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       img{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 20px;
+       }
+       img-thumbnail{
+        width: 500px;
+       }
+       img:hover{
+        transform: scale(1.08);
+       }
+       
+    </style>
+</head>
+<body>
+    <%- include("partials/header", { currentPage: 'gallery' })%>
+    <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 align-items-stretch py-5">
+        <div class="col">
+            <img src="images/centerimage6.jpg" class="img-thumbnail" alt="...">
+        </div>
+  
+        <div class="col ">
+            <img src="images/centerimage7.jpg" class="img-thumbnail" alt="..." height="400px">
+        </div>
+  
+        <div class="col">
+            <img src="images/centerimage8.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <img src="images/centerimage9.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <img src="images/centerimage2.jpeg" class="img-thumbnail" alt="..." height="300px">
+          </div>
+          <div class="col">
+            <img src="images/centerimage3.jpeg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <img src="images/centerimage4.jpeg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col">
+            <img src="images/centerimage5.jpeg" class="img-thumbnail" alt="...">
+          </div>
+
+    </div>
+    </div>
+    <%- include("partials/whatsapp") %>
+    <%- include("partials/footer", { currentPage: 'gallery' })%>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
